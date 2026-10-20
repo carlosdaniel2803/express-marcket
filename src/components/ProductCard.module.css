@@ -1,0 +1,100 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-card);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.media {
+  position: relative;
+  height: 220px;
+  padding: 24px;
+  background: #fff;
+}
+.image { width: 100%; height: 100%; object-fit: contain; }
+
+.tags {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.badge,
+.discount {
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+.badge { background: var(--color-primary); }
+.discount { background: var(--color-danger); }
+
+.like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--color-muted);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+.liked { color: var(--color-danger); }
+.liked svg { fill: var(--color-danger); }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  padding: 16px;
+}
+
+.title {
+  margin: 0;
+  min-height: 2.6em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.prices { display: flex; align-items: baseline; gap: 8px; margin-top: auto; }
+.price { font-size: 1.3rem; font-weight: 800; }
+.oldPrice { color: var(--color-muted); font-size: 0.85rem; text-decoration: line-through; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.button:hover { background: var(--color-primary-dark); }

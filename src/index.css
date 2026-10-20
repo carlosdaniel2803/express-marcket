@@ -1,0 +1,33 @@
+/* index.css — SOLO estilos globales */
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-hero: #1e40af;
+  --color-accent: #facc15;
+  --color-danger: #f43f5e;
+  --color-bg: #f8fafc;
+  --color-card: #fff;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --radius: 16px;
+  --container: 1216px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", system-ui, Arial, sans-serif;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
